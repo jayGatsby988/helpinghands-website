@@ -70,7 +70,7 @@ const features = [
 
 export default function Features() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, threshold: 0.1 });
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
   return (
     <section ref={ref} className="py-32 bg-gradient-to-br from-gray-50 via-white to-green-50 relative overflow-hidden">

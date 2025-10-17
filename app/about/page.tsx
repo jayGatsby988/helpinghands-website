@@ -135,9 +135,9 @@ export default function About() {
   const timelineRef = useRef(null);
   const valuesRef = useRef(null);
   const achievementsRef = useRef(null);
-  const isTimelineInView = useInView(timelineRef, { once: true, threshold: 0.2 });
-  const isValuesInView = useInView(valuesRef, { once: true, threshold: 0.2 });
-  const isAchievementsInView = useInView(achievementsRef, { once: true, threshold: 0.3 });
+  const isTimelineInView = useInView(timelineRef, { once: true, amount: 0.2 });
+  const isValuesInView = useInView(valuesRef, { once: true, amount: 0.2 });
+  const isAchievementsInView = useInView(achievementsRef, { once: true, amount: 0.3 });
 
   return (
     <div className="min-h-screen pt-20">

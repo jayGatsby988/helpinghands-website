@@ -81,8 +81,8 @@ export default function CalendarPage() {
   const [selectedDate, setSelectedDate] = useState<Date | undefined>(new Date());
   const eventsRef = useRef(null);
   const calendarRef = useRef(null);
-  const isEventsInView = useInView(eventsRef, { once: true, threshold: 0.2 });
-  const isCalendarInView = useInView(calendarRef, { once: true, threshold: 0.3 });
+  const isEventsInView = useInView(eventsRef, { once: true, amount: 0.2 });
+  const isCalendarInView = useInView(calendarRef, { once: true, amount: 0.3 });
 
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr);

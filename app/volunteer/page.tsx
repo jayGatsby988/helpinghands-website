@@ -66,8 +66,8 @@ const expectations = [
 export default function Volunteer() {
   const opportunitiesRef = useRef(null);
   const expectationsRef = useRef(null);
-  const isOpportunitiesInView = useInView(opportunitiesRef, { once: true, threshold: 0.3 });
-  const isExpectationsInView = useInView(expectationsRef, { once: true, threshold: 0.3 });
+  const isOpportunitiesInView = useInView(opportunitiesRef, { once: true, amount: 0.3 });
+  const isExpectationsInView = useInView(expectationsRef, { once: true, amount: 0.3 });
 
   return (
     <div className="min-h-screen pt-20">

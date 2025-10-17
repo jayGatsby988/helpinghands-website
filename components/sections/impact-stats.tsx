@@ -130,8 +130,8 @@ const testimonials = [
 export default function ImpactStats() {
   const ref = useRef(null);
   const testimonialsRef = useRef(null);
-  const isInView = useInView(ref, { once: true, threshold: 0.2 });
-  const isTestimonialsInView = useInView(testimonialsRef, { once: true, threshold: 0.3 });
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
+  const isTestimonialsInView = useInView(testimonialsRef, { once: true, amount: 0.3 });
 
   return (
     <section className="py-32 bg-gradient-to-br from-white via-green-50 to-gray-50 relative overflow-hidden">

@@ -61,8 +61,8 @@ const achievements = [
 export default function About() {
   const valuesRef = useRef(null);
   const achievementsRef = useRef(null);
-  const isValuesInView = useInView(valuesRef, { once: true, threshold: 0.2 });
-  const isAchievementsInView = useInView(achievementsRef, { once: true, threshold: 0.3 });
+  const isValuesInView = useInView(valuesRef, { once: true, amount: 0.2 });
+  const isAchievementsInView = useInView(achievementsRef, { once: true, amount: 0.3 });
 
   return (
     <div className="min-h-screen pt-20">

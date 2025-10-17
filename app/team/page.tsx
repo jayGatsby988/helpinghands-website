@@ -64,7 +64,7 @@ const teamMembers = [
 
 export default function Team() {
   const teamRef = useRef(null);
-  const isTeamInView = useInView(teamRef, { once: true, threshold: 0.2 });
+  const isTeamInView = useInView(teamRef, { once: true, amount: 0.2 });
 
   return (
     <div className="min-h-screen pt-16">

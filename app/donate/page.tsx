@@ -36,7 +36,7 @@ const impactData = [
 
 export default function Donate() {
   const impactRef = useRef(null);
-  const isImpactInView = useInView(impactRef, { once: true, threshold: 0.3 });
+  const isImpactInView = useInView(impactRef, { once: true, amount: 0.3 });
 
   return (
     <div className="min-h-screen pt-16">
